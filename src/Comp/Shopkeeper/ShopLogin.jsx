@@ -44,7 +44,7 @@ export default function ShopLogin() {
         let password =user.password
         const log = async () => {
             try {
-                const res = await axios.post('http://localhost:5500/login', {email,password})
+                const res = await axios.post('https://apnidukan.onrender.com/login', {email,password})
                 alert(res.data.message)
                 console.log(res.data.message)
                 let msg = res.data.message

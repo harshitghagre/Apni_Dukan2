@@ -6,7 +6,7 @@ export default function ManageAcc() {
     const [data, setData] = useState([])
     const d = async () => {
         try {
-            const res = await axios.get("http://localhost:5500/getcus")
+            const res = await axios.get("https://apnidukan.onrender.com/getcus")
             return res.data.customer
         } catch (err) {
             console.log("error")
